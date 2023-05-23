@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: #00455e;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+header img {
+  height: 150px;
+}
+
+header p {
+  font-size: 16px;
+  text-align: left;
+  margin-left: 15px;
+  font-weight: 600;
+}
+
+.orange {
+  color: #e86600;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.info {
+  background-color: #e86600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 150px;
+  width: 150px;
+  height: 50px;
+  color: #fff;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin-left: 15px;
+}
+
+a {
+  text-decoration: none;
+  margin-left: 15px;
+  color: #00455e;
+  font-weight: 500;
+}
+
+.destacada {
+  height: 350px;
+  background-color: #c0cbd6;
+  color: #fff;
+}
+
+.destacada img {
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+}
+
+.text_portada {
+  position: absolute;
+  margin-top: -330px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.text_portada h1 {
+  text-align: center;
+  font-size: 80px;
+  font-weight: 500;
+  color: #e86600;
+}
+
+.text_portada p {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  margin: 25px 200px 0;
+  color: #00455e;
+  text-shadow: 2px 2px #d2d2d2;
+}
+
+aside {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.listaCard {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card {
+  height: 55px;
+  margin-top: 15px;
+  background-color: #f5f5f5;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 5px #000;
+}
+footer {
+  background-color: #000203;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}

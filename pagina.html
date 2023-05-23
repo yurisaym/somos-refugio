@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Detalles del Artículo</title>
+  </head>
+  <body>
+    <h1 id="titulo"></h1>
+    <h2 id="subtitulo"></h2>
+    <p id="articulo"></p>
+    <img id="imagen1" width="100px" src="" />
+    <img id="imagen2" width="100px" src="" />
+
+    <script>
+      // Obtener los parámetros de la URL
+      const urlParams = new URLSearchParams(window.location.search)
+      const title = urlParams.get('title')
+      const subTitle = urlParams.get('subTitle')
+      const article = urlParams.get('article')
+      const image1 = urlParams.get('image1')
+      const image2 = urlParams.get('image2')
+
+      // Mostrar los datos en la página
+      document.getElementById('titulo').textContent = decodeURIComponent(title)
+      document.getElementById('subtitulo').textContent =
+        decodeURIComponent(subTitle)
+      document.getElementById('articulo').textContent =
+        decodeURIComponent(article)
+      document.getElementById('imagen1').src = decodeURIComponent(image1)
+      document.getElementById('imagen2').src = decodeURIComponent(image2)
+    </script>
+  </body>
+</html>
