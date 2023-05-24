@@ -9,13 +9,10 @@ function showItems(data) {
         <div class="card-list">
         <a href="pagina.html?title=${encodeURIComponent(
           escapedTitle
-        )}&subTitle=${encodeURIComponent(
-      escapedSubTitle
-    )}&article=${encodeURIComponent(obj.article)}&image1=${encodeURIComponent(
+        )}&article=${encodeURIComponent(obj.article)}&image1=${encodeURIComponent(
       obj.image1
     )}&image2=${encodeURIComponent(obj.image2)}">
-          <p>Titulo: ${escapedTitle}</p>
-          <p>Subtítulo: ${escapedSubTitle}</p>
+          <p>${escapedTitle}</p>
           <img src="${obj.image1}" width="100px">
           </a>
         </div>
