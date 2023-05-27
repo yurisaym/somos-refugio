@@ -149,6 +149,9 @@ aside {
   width: 70%;
   margin-left: 10px;
   word-break: break-word;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-list img {
@@ -179,7 +182,7 @@ footer {
 
   .text_portada p {
     text-align: center;
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 500;
     margin: 25px 20px 0;
     color: #00455e;
@@ -191,6 +194,14 @@ footer {
   }
 
   #contenido{
-    width: 70%;
+    width: 90%;
+  }
+
+  .card-list p {
+    font-size: 14px;
+  }
+
+  .card-list img {
+    width: 70px;
   }
 }
