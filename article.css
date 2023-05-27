@@ -44,7 +44,7 @@
 
 .img-destaque img {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     margin: 15px auto;
     height: 400px;
 }
