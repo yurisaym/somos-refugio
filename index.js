@@ -6,17 +6,16 @@ function showItems(data) {
     const escapedTitle = escapeQuotes(obj.title)
     const escapedSubTitle = escapeQuotes(obj.subTitle)
     contenido.innerHTML += `
+    <a href="pagina.html?title=${encodeURIComponent(
+      escapedTitle
+    )}&subTitle=${encodeURIComponent(escapedSubTitle)}&article=${encodeURIComponent(obj.article)}&image1=${encodeURIComponent(
+  obj.image1
+)}&image2=${encodeURIComponent(obj.image2)}">
         <div class="card-list">
-        <a href="pagina.html?title=${encodeURIComponent(
-          escapedTitle
-        )}&article=${encodeURIComponent(obj.article)}&image1=${encodeURIComponent(
-      obj.image1
-    )}&image2=${encodeURIComponent(obj.image2)}">
           <p>${escapedTitle}</p>
           <img src="${obj.image1}" width="100px">
+          </div>
           </a>
-        </div>
-        <hr>
       `
   })
 }

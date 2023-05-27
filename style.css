@@ -128,20 +128,37 @@ aside {
   box-shadow: 0 0 5px #000;
 }
 
-.card-list a {
+.card-list {
+  box-shadow: 2px 2px 4px darkgrey;
+  border-radius: 7px;
+  margin-bottom: 10px;
   display: flex;
-  margin: 10px;
   justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  overflow-y: hidden;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
-.card-list a p{
+.card-list:hover {
+  box-shadow: 4px 4px 9px darkgrey;
+}
+
+.card-list p{
   width: 70%;
+  margin-left: 10px;
+  word-break: break-word;
+}
+
+.card-list img {
+  margin-right: 10px;
+  border-radius: 5px;
 }
 
 #contenido {
-  margin-top: 25px;
   width: 70%;
-  margin: 0 auto;
+  margin: 0 auto 30px;
 }
 
 footer {

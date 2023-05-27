@@ -2,32 +2,73 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Detalles del Artículo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="article.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Somos Refúgio</title>
   </head>
+  <header>
+    <img src="images/logoSomosRefugio.png" alt="materia destacada" />
+    <div class="text_description">
+      <p>Informação de</p>
+      <p class="orange">refúgios para</p>
+      <p>refúgiados e</p>
+      <p>solicitantes de</p>
+      <p class="orange">refúgio</p>
+    </div>
+    <div class="nav">
+      <div class="info">
+        <p>Informaçoes</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Para refugiados</a></li>
+          <li><a href="#">Migrantes</a></li>
+          <li><a href="#">Educação</a></li>
+          <li><a href="#">Localiza</a></li>
+          <li><a href="#">Refugios</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
   <body>
-    <h1 id="titulo"></h1>
-    <h2 id="subtitulo"></h2>
-    <p id="articulo"></p>
-    <img id="imagen1" width="100px" src="" />
-    <img id="imagen2" width="100px" src="" />
+    <main class="article-body">
+      <div class="img-destaque">
+        <img id="imagen1" src="" />
+      </div>
+      <h1 id="titulo"></h1>
+      <h2 id="subtitulo"></h2>
+      <p id="articulo"></p>
+      <img id="imagen2" width="100px" src="" />
+    </main>
+    <footer>
+      <h6>Somos Refugio 2023</h6>
+    </footer>
 
     <script>
       // Obtener los parámetros de la URL
-      const urlParams = new URLSearchParams(window.location.search)
-      const title = urlParams.get('title')
-      const subTitle = urlParams.get('subTitle')
-      const article = urlParams.get('article')
-      const image1 = urlParams.get('image1')
-      const image2 = urlParams.get('image2')
+      const urlParams = new URLSearchParams(window.location.search);
+      const title = urlParams.get("title");
+      const subTitle = urlParams.get("subTitle");
+      const article = urlParams.get("article");
+      const image1 = urlParams.get("image1");
+      const image2 = urlParams.get("image2");
 
       // Mostrar los datos en la página
-      document.getElementById('titulo').textContent = decodeURIComponent(title)
-      document.getElementById('subtitulo').textContent =
-        decodeURIComponent(subTitle)
-      document.getElementById('articulo').textContent =
-        decodeURIComponent(article)
-      document.getElementById('imagen1').src = decodeURIComponent(image1)
-      document.getElementById('imagen2').src = decodeURIComponent(image2)
+      document.getElementById("titulo").textContent = decodeURIComponent(title);
+      document.getElementById("subtitulo").textContent =
+        decodeURIComponent(subTitle);
+      document.getElementById("articulo").textContent =
+        decodeURIComponent(article);
+      document.getElementById("imagen1").src = decodeURIComponent(image1);
+      document.getElementById("imagen2").src = decodeURIComponent(image2);
     </script>
   </body>
 </html>
